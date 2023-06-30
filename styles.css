@@ -15,34 +15,31 @@ body {
   color: white;
 }
 
-.video-content h1 {
-  font-size: 3vw;
-}
-
 .hero-image {
   width: 100%;
   height: 100%;
   background-size: cover;
   min-height: 100vh;
   padding: 0px;
-  font-size: 16px;
+  font-size: 14px
 }
-
 .content {
   position: absolute;
   color: white;
   width: 500px;
   font-size: 20px;
-  text-shadow: 3px 3px black;
+  text-shadow: 3px 3px 3px black;
   margin-top: 70px;
   margin-left: 50px;
-  text-transform: uppercase;
+}
+.content:hover {
+  text-decoration: transparent;
 }
 .navigation {
   background-color: none;
-  position: absolute;
   top: 16px;
   right: 32px;
+  position:absolute;
 }
 .menu-link {
   text-decoration: none;
@@ -51,7 +48,7 @@ body {
 }
 .menu-link:hover {
   text-decoration: underline;
-  text-decoration-color: rgb(110, 78, 17);
+  text-decoration-color: rgb(0, 0, 0);
 }
 .logolambo {
   position: absolute;
@@ -72,7 +69,7 @@ body {
   align-items: left;
   margin-top: 350px;
   margin-left: 50px;
-  text-shadow: 2px 2px black;
+  text-shadow: 2px 2px 2px black;
 }
 .box {
   flex-direction: column;
@@ -83,8 +80,7 @@ body {
 .box p {
   font-size: 13px;
   margin-top: 0px;
-  margin-bottom: 5px;
-}
+  margin-bottom: 5px;}
 
 .box h1 {
   margin-bottom: 4px;
@@ -104,16 +100,21 @@ body {
   width: 40%;
   font-size: 18px;
   color: black;
+  margin-top: 0px;
+  margin-bottom: 20px;
 }
 .neuer_content .rechts img {
   width: 600px;
   max-height: 380px;
   background-color: white;
-  box-shadow: 5px 5px rgb(127, 118, 118);
+  box-shadow: 5px 5px 5px rgb(161, 161, 161);
   border-radius: 3%;
+  margin-top:0px;
+  margin-right: 0px;
 }
 .neuer_content .title {
   color: black;
+  margin-top: 150px;
 }
 .content_2 {
   min-height: 400px;
@@ -123,13 +124,14 @@ body {
   width: 600px;
   max-height: 380px;
   background-color: white;
-  box-shadow: 5px 5px rgb(127, 118, 118);
-  margin-left: 20px;
+  box-shadow: 5px 5px 5px rgb(161, 161, 161);
+  margin-left: 0px;
   margin-bottom: 20px;
   border-radius: 3%;
 }
 .content_2 .rechts {
   display: flex;
+  flex-direction: column;
   width: 40%;
   font-size: 18px;
   color: black;
@@ -143,9 +145,10 @@ body {
 }
 .content_2 .title {
   display: flex;
-  margin-right: 490px;
+  margin-right: 0px;
   color: black;
-  justify-content: flex-end;
+  justify-content: center;
+  margin-left: 400px;
 }
 .content_3 {
   min-height: 400px;
@@ -163,14 +166,16 @@ body {
   font-size: 18px;
   color: black;
   margin-left: 20px;
+  margin-bottom: 20px;
 }
 .content_3 .rechts img {
   width: 600px;
   max-height: 380px;
   background-color: white;
-  box-shadow: 5px 5px rgb(127, 118, 118);
+  box-shadow: 5px 5px 5px rgb(161, 161, 161);
   border-radius: 3%;
   margin-right: 20px;
+  margin-left: 20px;
 }
 .content_3 .title {
   color: black;
@@ -185,3 +190,10 @@ body {
 .video-content {
   z-index: 100;
 }
+.exterior {
+  font-size: 32px;
+  margin-bottom:10px;
+  font-weight: bold;
+  font-family: "fonts/static/Montserrat-LightItalic.ttf";
+}
+
