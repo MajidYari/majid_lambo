@@ -16,70 +16,85 @@
     <main class="kontaktseite">
       <nav class="navigation">
         <a class="menu-link" href="index.html">Home</a>
-        <a class="menu-link" href="./contact.html">Kontakt</a>
+        <a class="menu-link" href="contact.html">Kontakt</a>
         <a class="menu-link" href="">Anruf</a>
       </nav>
-      <div class="container">
-        <div class="email">
-          <img class="logo-email" src="images/email-removebg-preview.png" />
-          <text>
-            Schreiben Sie uns eine Email. Wir kümmern uns um Ihr Anliegen
-          </text>
-        </div>
-        <div class="insta">
-          <a
-            href="https://www.instagram.com/lamborghini/?hl=de"
-            target="_blank"
-          >
-            <img
-              class="insta-logo"
-              src="images/Insta-removebg-preview.png"
-              alt="Instagram-Logo"
+      <div class="contact_flex_container">
+        <div class="container">
+          <form action="action_page.php">
+            <input
+              type="text"
+              id="fname"
+              name="firstname"
+              placeholder="Your name.."
             />
-          </a>
-          <text> Schauen Sie gerne auf unsere Insta vorbei </text>
-        </div>
-        <div class="twitter">
-          <a
-            href="https://twitter.com/Lamborghini?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
-            target="_blank"
-          >
-            <img
-              class="twitter-logo"
-              src="images/twitter.2-removebg-preview.png"
-              alt="Instagram-Logo"
+
+            <input
+              type="text"
+              id="lname"
+              name="lastname"
+              placeholder="Your last name.."
             />
-          </a>
-          <text> Schauen Sie gerne auf unsere Twitter-Seite vorbei </text>
+
+            <select id="country" name="country">
+              <option value="australia">Australia</option>
+              <option value="canada">Canada</option>
+              <option value="usa">USA</option>
+            </select>
+
+            <textarea
+              id="subject"
+              name="subject"
+              placeholder="Write something.."
+              style="height: 200px"
+            ></textarea>
+
+            <input type="submit" value="Submit" />
+          </form>
         </div>
-        <div class="telefon">
-          <img class="telefon-logo" src="images/telefon-removebg-preview.png" />
-          <text> Kontaktieren Sie uns per Telefon. 24/7 erreichbar </text>
+
+        <div class="container">
+          <div class="email">
+            <img class="logo-email" src="images/email-removebg-preview.png" />
+            <text>
+              Schreiben Sie uns eine Email. Wir kümmern uns um Ihr Anliegen
+            </text>
+          </div>
+          <div class="insta">
+            <a
+              href="https://www.instagram.com/lamborghini/?hl=de"
+              target="_blank"
+            >
+              <img
+                class="insta-logo"
+                src="images/Insta-removebg-preview.png"
+                alt="Instagram-Logo"
+              />
+            </a>
+            <text> Schauen Sie gerne auf unsere Insta vorbei </text>
+          </div>
+          <div class="twitter">
+            <a
+              href="https://twitter.com/Lamborghini?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+              target="_blank"
+            >
+              <img
+                class="twitter-logo"
+                src="images/twitter.2-removebg-preview.png"
+                alt="Instagram-Logo"
+              />
+            </a>
+            <text> Schauen Sie gerne auf unsere Twitter-Seite vorbei </text>
+          </div>
+          <div class="telefon">
+            <img
+              class="telefon-logo"
+              src="images/telefon-removebg-preview.png"
+            />
+            <text> Kontaktieren Sie uns per Telefon. 24/7 erreichbar </text>
+          </div>
         </div>
       </div>
-      <div class="container2">
-  <form action="action_page.php">
-
-    <label for="fname">First Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your name..">
-
-    <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-    <label for="country">Country</label>
-    <select id="country" name="country">
-      <option value="australia">Australia</option>
-      <option value="canada">Canada</option>
-      <option value="usa">USA</option>
-    </select>
-
-    <label for="subject">Subject</label>
-    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-
-    <input type="submit" value="Submit">
-
-   </form>
- </div>
-</main>
-</body>
+    </main>
+  </body>
 </html>
