@@ -13,6 +13,7 @@ body {
   font-family: "fonts/static/Montserrat-LightItalic.ttf";
   background-color: white;
   color: white;
+  overflow-x: hidden;
 }
 
 .flex {
@@ -20,15 +21,20 @@ body {
 }
 
 .hero-image {
-  width: 100%;
   height: 100%;
   background-size: cover;
   min-height: 100vh;
   padding: 0px;
 }
+
+.hero-image video {
+  height: 100%;
+  width: auto;
+}
+
 .content {
   color: white;
-  position:absolute;
+  position: absolute;
   width: 500px;
   font-size: clamp(5px, 3vw, 20px);
   text-shadow: 3px 3px 3px black;
