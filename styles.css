@@ -25,13 +25,12 @@ body {
   background-size: cover;
   min-height: 100vh;
   padding: 0px;
-  font-size: 14px;
 }
 .content {
-  position: absolute;
   color: white;
+  position:absolute;
   width: 500px;
-  font-size: 20px;
+  font-size: clamp(5px, 3vw, 20px);
   text-shadow: 3px 3px 3px black;
   margin-top: 70px;
   margin-left: 50px;
@@ -63,17 +62,17 @@ body {
   background: transparent;
   border: none;
   margin-left: 30px;
+  font-size: clamp(1px, 3vw, 20px);
 }
 .information {
   position: absolute;
   color: white;
-  font-size: 5px;
-  min-height: 200px;
   flex-direction: column;
   align-items: left;
   margin-top: 350px;
   margin-left: 50px;
   text-shadow: 2px 2px 2px black;
+  font-size: clamp(5px, 3vw, 20px);
 }
 .box {
   flex-direction: column;
@@ -99,9 +98,11 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
   display: flex;
+  margin-top: 200px;
 }
 .neuer_content .links {
   display: flex;
+  flex-direction: column;
   width: 40%;
   font-size: 18px;
   color: black;
@@ -112,14 +113,16 @@ body {
   width: 600px;
   max-height: 380px;
   background-color: white;
-  box-shadow: 5px 5px 5px rgb(161, 161, 161);
+  box-shadow: 10px 10px 10px rgb(161, 161, 161);
   border-radius: 3%;
   margin-top: 0px;
   margin-right: 0px;
+  border-top-left-radius: 30%;
+  border-bottom-right-radius: 30%;
 }
 .neuer_content .title {
   color: black;
-  margin-top: 150px;
+  margin-top: 0px;
 }
 .content_2 {
   min-height: 400px;
@@ -129,10 +132,12 @@ body {
   width: 600px;
   max-height: 380px;
   background-color: white;
-  box-shadow: 5px 5px 5px rgb(161, 161, 161);
+  box-shadow: 10px 10px 10px rgb(161, 161, 161);
   margin-left: 0px;
   margin-bottom: 20px;
   border-radius: 3%;
+  border-top-left-radius: 30%;
+  border-bottom-right-radius: 30%;
 }
 .content_2 .rechts {
   display: flex;
@@ -167,6 +172,7 @@ body {
 }
 .content_3 .links {
   display: flex;
+  flex-direction: column;
   width: 40%;
   font-size: 18px;
   color: black;
@@ -177,10 +183,12 @@ body {
   width: 600px;
   max-height: 380px;
   background-color: white;
-  box-shadow: 5px 5px 5px rgb(161, 161, 161);
+  box-shadow: 10px 10px 10px rgb(161, 161, 161);
   border-radius: 3%;
   margin-right: 20px;
   margin-left: 20px;
+  border-top-left-radius: 30%;
+  border-bottom-right-radius: 30%;
 }
 .content_3 .title {
   color: black;
@@ -196,6 +204,18 @@ body {
   z-index: 100;
 }
 .exterior {
+  font-size: 32px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-family: "fonts/static/Montserrat-LightItalic.ttf";
+}
+.Überblick {
+  font-size: 32px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-family: "fonts/static/Montserrat-LightItalic.ttf";
+}
+.Interieur {
   font-size: 32px;
   margin-bottom: 10px;
   font-weight: bold;
