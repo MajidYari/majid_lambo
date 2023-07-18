@@ -12,16 +12,12 @@ body {
   padding: 0;
   font-family: "fonts/static/Montserrat-LightItalic.ttf";
   overflow-x: hidden;
-  background-color:#d3f4fa ;
-}
-
-.flex {
-  display: flex;
+  background-color: white;
 }
 
 .hero-image {
-  width: 100%;
-  height: 100vh;
+  width: calc(100vw);
+  height: calc( 56.25vw);
   background-size: cover;
   padding: 0px;
 }
@@ -37,7 +33,7 @@ body {
   color: white;
   position: absolute;
   width: 500px;
-  font-size: clamp(5px, 3vw, 20px);
+  font-size: clamp(3px, 3vw, 20px);
   text-shadow: 3px 3px 3px black;
   margin-top: 70px;
   margin-left: 50px;
@@ -48,7 +44,6 @@ body {
   animation-iteration-count: 1;
   animation-direction:normal ;
   animation-fill-mode: none;
-
 }
 .content:hover {
   text-decoration: transparent;
@@ -84,8 +79,8 @@ body {
   color: white;
   flex-direction: column;
   align-items: left;
-  margin-top: 350px;
   margin-left: 50px;
+  margin-top: 350px;
   text-shadow: 2px 2px 2px black;
   font-size: clamp(5px, 3vw, 20px);
   animation-name: slideInLeft;
@@ -95,6 +90,8 @@ body {
   animation-iteration-count: 1;
   animation-direction:normal ;
   animation-fill-mode: none;
+  width: calc(100vw);
+  height: calc( 56.25vw );
 }
 .box {
   flex-direction: column;
@@ -114,6 +111,7 @@ body {
 .neuer_content {
   min-height: 400px;
   padding: 10px;
+  position: sticky;
 }
 .neuer_content .container {
   flex-direction: row;
@@ -224,6 +222,8 @@ body {
 .back-video {
   position: absolute;
   z-index: -1500;
+  width: calc(100vw);
+  height: calc(56.25vw);
 }
 @media (min-aspect-ratio: 16/9) {
   .back-video {
@@ -257,7 +257,7 @@ body {
 }
 @media (max-width: 1121px) {
   .neuer_content .links {
-    width: 70%;
+    width: 90%;
     margin-left: 0;
   }
   .neuer_content .rechts img {
@@ -265,24 +265,30 @@ body {
     align-items: center;
   }
   .content_2 .rechts {
-    width: 70%;
+    width: 90%;
     margin-left: 0;
+    margin-bottom: 20px;
   }
   .content_2 .links img {
     margin-right: 0px;
     align-items: center;
+    margin-bottom: 0px;;
   }
   .content_3 .links {
-    width: 70%;
+    width: 90%;
     margin-left: 0;
   }
  .content_3 .rechts img {
-
+  align-items: center;
  }
 }
 @media (min-width: 1285px) {
   .hero-image {
-    height: 120vh;
+  }
+}
+@media (max-width: 834px) {
+  .information {
+   display: none;
   }
 }
 .video-content {
